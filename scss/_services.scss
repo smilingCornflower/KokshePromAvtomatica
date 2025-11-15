@@ -1,0 +1,100 @@
+.services {
+  margin: 0 0 170px 0;
+
+  &__title {
+    color: #000;
+    font-size: 66px;
+    font-weight: 600;
+    margin: 0 0 135px 0;
+  }
+
+  &__card-container {
+    overflow: hidden;
+    display: flex;
+    gap: 0 40px;
+
+    @media (max-width: 1000px) {
+      overflow: auto;
+    }
+  }
+
+  &__card {
+    width: 400px;
+    color: #000;
+    height: 630px;
+    flex-shrink: 0;
+    background: #fff;
+    margin: 0 0 6px 0;
+    border-radius: 20px;
+    padding: 118px 29px 90px 17px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  &__card-icon {
+    margin: 0 0 47px 0;
+  }
+
+  &__card-title {
+    font-size: 34px;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+  }
+
+  &__button-container {
+    gap: 0 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__scroll-button {
+    border: none;
+    font-size: 40px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    transition: 0.3s;
+    &:hover {
+      color: #fff;
+      cursor: pointer;
+      background: rgba(13, 44, 84, 0.411);
+    }
+
+    @media (max-width: 1000px) {
+      display: none;
+    }
+  }
+
+  @media (max-width: 1030px) {
+    & {
+      margin: 0 0 100px 0;
+    }
+
+    &__title {
+      font-size: 50px;
+      margin: 0 0 80px 0;
+    }
+
+    &__card {
+      padding: 90px 29px 70px 17px;
+      height: auto;
+    }
+  }
+
+  @media (max-width: 520px) {
+    &__card {
+      max-width: 300px;
+    }
+
+    &__card-title {
+      font-size: 25px;
+    }
+
+    &__card-text {
+      font-size: 20px;
+    }
+  }
+}

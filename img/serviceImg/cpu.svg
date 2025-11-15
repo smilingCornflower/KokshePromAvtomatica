@@ -1,0 +1,13 @@
+<svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80.000000" height="80.000000" fill="none">
+	<rect id="cpu" width="80.000000" height="80.000000" x="0.000000" y="0.000000" fill="rgb(255,255,255)" fill-opacity="0" />
+	<path id="Vector" d="M60 13.3333C63.6819 13.3333 66.6667 16.318 66.6667 19.9999L66.6667 59.9999C66.6667 63.6818 63.6819 66.6666 60 66.6666L20 66.6666C16.3181 66.6666 13.3334 63.6818 13.3334 59.9999L13.3334 19.9999C13.3334 16.318 16.3181 13.3333 20 13.3333L60 13.3333Z" stroke="rgb(0,0,0)" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" />
+	<path id="Vector" d="M50 30L50 50L30 50L30 30L50 30Z" stroke="rgb(0,0,0)" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" />
+	<path id="Vector" d="M0 0L10 0" stroke="rgb(0,0,0)" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" transform="matrix(0,1,-1,0,30,3.33337)" />
+	<path id="Vector" d="M0 0L10 0" stroke="rgb(0,0,0)" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" transform="matrix(0,1,-1,0,50,3.33337)" />
+	<path id="Vector" d="M0 0L10 0" stroke="rgb(0,0,0)" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" transform="matrix(0,1,-1,0,30,66.6666)" />
+	<path id="Vector" d="M0 0L10 0" stroke="rgb(0,0,0)" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" transform="matrix(0,1,-1,0,50,66.6666)" />
+	<path id="Vector" d="M66.6666 30L76.6666 30" stroke="rgb(0,0,0)" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" />
+	<path id="Vector" d="M66.6666 46.6667L76.6666 46.6667" stroke="rgb(0,0,0)" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" />
+	<path id="Vector" d="M3.33337 30L13.3334 30" stroke="rgb(0,0,0)" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" />
+	<path id="Vector" d="M3.33337 46.6667L13.3334 46.6667" stroke="rgb(0,0,0)" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" />
+</svg>

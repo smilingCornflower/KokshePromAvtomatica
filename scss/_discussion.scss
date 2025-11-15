@@ -1,0 +1,111 @@
+.discussion {
+  color: #000;
+  overflow: hidden;
+  padding: 80px 0 70px;
+  background: #fcfe57;
+  border-top: 1px solid #000;
+  margin: 0 0 100px 0;
+
+  &__title {
+    margin: 0 0 40px 0;
+  }
+
+  &__text {
+    font-size: 24px;
+    font-weight: 500;
+    max-width: 1190px;
+    position: relative;
+    text-align: center;
+    margin: 0 auto 65px;
+
+    &::before {
+      content: "";
+      top: -156px;
+      left: -220px;
+      width: 305px;
+      height: 305px;
+      position: absolute;
+      filter: blur(350px);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 1));
+
+      @media (max-width: 845px) {
+        display: none;
+      }
+    }
+
+    &::after {
+      top: -88px;
+      right: -205px;
+      width: 305px;
+      height: 305px;
+      content: "";
+      position: absolute;
+      filter: blur(350px);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 1));
+
+      @media (max-width: 845px) {
+        display: none;
+      }
+    }
+
+    @media (max-width: 520px) {
+      font-size: 18px;
+    }
+  }
+
+  &__button-container {
+    gap: 20px 7px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__button {
+    font-family: "Montserrat", sans-serif;
+    gap: 0 15px;
+    color: #fff;
+    border: none;
+    display: flex;
+    line-height: 1;
+    font-size: 16px;
+    transition: 0.3s;
+    font-weight: 600;
+    background: #000;
+    padding: 16px 13px;
+    border-radius: 10px;
+    align-items: center;
+
+    &:hover {
+      cursor: pointer;
+      background: #202020;
+    }
+  }
+
+  &__arrow {
+    width: 18px;
+    height: 18px;
+    display: block;
+    background: url("../img/advantages/arrow-right.svg");
+
+    @media (max-width: 535px) {
+      transform: rotate(90deg);
+    }
+  }
+
+  &__link {
+    line-height: 1;
+    font-weight: 500;
+    transition: 0.3s;
+    padding: 16px 64px;
+    background: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    color: rgba(13, 44, 84, 1);
+
+    &:hover {
+      cursor: pointer;
+      background: #e4e4e4;
+      color: rgb(25, 98, 194);
+    }
+  }
+}

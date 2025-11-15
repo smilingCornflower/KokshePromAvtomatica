@@ -1,0 +1,226 @@
+@import "./reset.scss";
+@import "./header.scss";
+@import "./services.scss";
+@import "./works.scss";
+@import "./advantages.scss";
+@import "./discussion.scss";
+@import "./contacts.scss";
+@import "./footer.scss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kameron:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+//font-family: "Outfit", sans-serif;
+//font-family: "Montserrat", sans-serif;
+
+.some {
+  display: flex;
+  justify-content: space-between;
+  color: red;
+}
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 1920px;
+}
+
+html {
+  height: 100%;
+}
+
+.body {
+  color: #fff;
+  display: flex;
+  font-size: 22px;
+  min-height: 100vh;
+  background: #fff;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer {
+  flex-shrink: 0;
+}
+
+.title {
+  font-size: 49px;
+  font-weight: 600;
+  text-align: center;
+  color: rgba(13, 44, 84, 1);
+
+  &_with-underline {
+    position: relative;
+
+    &::before {
+      content: "";
+      height: 5px;
+      width: 150px;
+      bottom: -41px;
+      position: absolute;
+      left: calc(50% - 75px);
+      background: rgba(0, 123, 255, 1);
+    }
+  }
+
+  &_black {
+    color: #000;
+  }
+
+  @media (max-width: 590px) {
+    font-size: 39px;
+  }
+
+  @media (max-width: 520px) {
+    font-size: 35px;
+  }
+}
+
+.first-container {
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1845px;
+}
+
+.shadow {
+  background: radial-gradient(#dbd8d8, #fff 70%);
+}
+
+.main {
+  flex-grow: 1;
+
+  &__container {
+    margin-bottom: 190px;
+    justify-content: center;
+
+    @media (max-width: 1575px) {
+      margin-bottom: 100px;
+    }
+
+    @media (max-width: 525px) {
+      margin-bottom: 70px;
+    }
+  }
+
+  &__logo-container {
+    flex: 0 1 490px;
+  }
+
+  &__sub-title {
+    font-family: "Kameron", serif;
+    font-size: 145px;
+    font-weight: 700;
+    padding: 0 0 17px;
+    margin: 0 0 12px 0;
+    display: inline-block;
+    color: rgba(13, 44, 84, 1);
+    border-bottom: 7px solid rgba(170, 170, 170, 1);
+
+    @media (max-width: 1945px) {
+      font-size: 120px;
+    }
+
+    @media (max-width: 1575px) {
+      font-size: 100px;
+    }
+
+    @media (max-width: 1315px) {
+      font-size: 80px;
+    }
+
+    @media (max-width: 1030px) {
+      font-size: 60px;
+    }
+
+    @media (max-width: 785px) {
+      font-size: 40px;
+    }
+
+    @media (max-width: 525px) {
+      font-size: 30px;
+    }
+
+    @media (max-width: 410px) {
+      font-size: 25px;
+    }
+    @media (max-width: 335px) {
+      font-size: 22px;
+    }
+  }
+
+  &__text {
+    font-size: 53px;
+    font-weight: 600;
+    color: rgba(54, 50, 51, 1);
+
+    @media (max-width: 1945px) {
+      font-size: 45px;
+    }
+
+    @media (max-width: 1575px) {
+      font-size: 37px;
+    }
+
+    @media (max-width: 1315px) {
+      font-size: 29px;
+    }
+
+    @media (max-width: 525px) {
+      font-size: 18px;
+    }
+  }
+
+  &__link {
+    margin-bottom: 90px;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.3s;
+    background: #000;
+    font-size: 22.67px;
+    padding: 26px 62px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 63.75px;
+
+    &:hover {
+      color: #fff;
+      background: #1d1d1d;
+    }
+
+    @media (max-width: 1575px) {
+      margin: 0 0 120px 0;
+    }
+
+    @media (max-width: 1130px) {
+      margin: 0 0 90px 0;
+    }
+
+    @media (max-width: 1030px) {
+      margin: 0 0 60px 0;
+    }
+
+    @media (max-width: 590px) {
+      font-size: 18px;
+      padding: 13px 31px;
+    }
+  }
+}
+
+.mini-title-container {
+  display: flex;
+  justify-content: center;
+}
+
+.mini-title {
+  color: #000;
+  font-size: 16px;
+  padding: 13px 39px;
+  border-radius: 50px;
+  display: inline-block;
+  background: rgba(252, 254, 87, 0.4);
+  &_white {
+    background: #fff;
+  }
+}

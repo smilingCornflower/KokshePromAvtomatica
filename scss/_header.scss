@@ -1,0 +1,142 @@
+.header {
+  margin: 0 0 45px 0;
+  position: relative;
+  padding: 45px 0 55px;
+  font-family: "Manrope";
+  background: rgba(0, 0, 0, 0.5);
+
+  &::before {
+    top: 0;
+    left: 0;
+    z-index: -1;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("../img/bgHeader.jpg") no-repeat;
+    background-size: 100% 100%;
+
+    @media (max-width: 1600px) {
+      background-size: auto 100%;
+      background-position: right;
+    }
+
+    @media (max-width: 685px) {
+      background-position: 82%;
+    }
+  }
+
+  &::after {
+    right: 5%;
+    top: 360px;
+    content: "";
+    width: 379px;
+    height: 516px;
+    position: absolute;
+    background: url("../img/sticker.png") no-repeat;
+    background-size: cover;
+
+    @media (max-width: 1130px) {
+      display: none;
+    }
+  }
+
+  &__logo-text {
+    font-family: "Kameron", serif;
+    font-size: 38px;
+  }
+
+  &__nav {
+    display: flex;
+    font-weight: 300;
+    margin: 0 0 12px 0;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 1250px) {
+      display: block;
+
+      & p {
+        display: none;
+      }
+
+      & ul {
+        gap: 30px 52px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+    }
+  }
+
+  &__list {
+    gap: 0 52px;
+    display: flex;
+  }
+
+  &__link {
+    color: #fff;
+    transition: 0.3s;
+    text-decoration: none;
+    &:hover {
+      color: #6d6d6d;
+      text-decoration: underline;
+    }
+  }
+
+  &__number {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 4px 11px;
+    background: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s;
+    color: rgba(13, 44, 84, 1);
+    &:hover {
+      color: rgb(23, 91, 179);
+      background: #c1c1c1;
+    }
+  }
+
+  &__text {
+    font-size: 20px;
+    margin: 0 0 205px 0;
+    color: rgba(217, 217, 217, 1);
+
+    @media (max-width: 1250px) {
+      color: transparent;
+    }
+
+    @media (max-width: 467px) {
+      margin: 0 0 105px;
+    }
+  }
+
+  &__title {
+    font-family: "Outfit", sans-serif;
+    width: 745px;
+    font-weight: 700;
+    line-height: 120%;
+    font-size: 56.67px;
+    margin: 0 0 30px 0;
+
+    @media (max-width: 790px) {
+      font-size: 45px;
+      width: auto;
+    }
+
+    @media (max-width: 590px) {
+      font-size: 39px;
+    }
+
+    @media (max-width: 420px) {
+      font-size: 30px;
+    }
+  }
+
+  &__sub-title {
+    color: #fff;
+    text-transform: capitalize;
+    font-family: "Montserrat", sans-serif;
+  }
+}
